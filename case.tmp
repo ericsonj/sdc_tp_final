@@ -1,0 +1,44 @@
+
+
+	mux: process(clk, rst, x_o) is
+	begin
+		if rising_edge(clk) then
+			case x_i is
+      			when "0000" =>
+                    data_o <= "0000";
+      			when "0001" =>
+					data_o <= "0001";
+      			when "0010" =>
+					data_o <= "0010";
+				when "0011" =>
+                    data_o <= "0011";
+				when "0100" =>
+                    data_o <= "0100";
+				when "0101" =>
+                    data_o <= "0101";
+				when "0110" =>
+                    data_o <= "0110";
+				when "0111" =>
+                    data_o <= "0111";
+				when "1000" =>
+                    data_o <= "1000";
+      			when "1001" =>
+                    data_o <= "1001";
+      			when "1010" =>
+                    data_o <= "1010";
+				when "1011" =>
+                    data_o <= "1011"; 
+				when "1100" =>
+                    data_o <= "1100";
+				when "1101" =>
+                    data_o <= "1101";
+				when "1110" =>
+                    data_o <= "1110";
+				when "1111" =>
+                    data_o <= "1111";
+				when others =>
+                    data_o <= "0000";
+    		end case;
+		end if;
+	end process;
+	
