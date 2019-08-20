@@ -7,6 +7,6 @@
 ### Grupo:  
  
 * Ericson Estupiñan  
-* 
+* Roberto Compañy 
 * 
 
