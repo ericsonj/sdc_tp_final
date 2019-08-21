@@ -1,0 +1,51 @@
+[*]
+[*] GTKWave Analyzer v3.3.86 (w)1999-2017 BSI
+[*] Tue Aug 20 23:52:17 2019
+[*]
+[dumpfile] "/home/ericson/Dropbox/MAESTRIA/MSE/bim3/SDC/sdc_tp_final/sim_build/fsm_cmd.ghw"
+[dumpfile_mtime] "Tue Aug 20 23:51:30 2019"
+[dumpfile_size] 17741
+[savefile] "/home/ericson/Dropbox/MAESTRIA/MSE/bim3/SDC/sdc_tp_final/sim_build/sim.gtkw"
+[timestart] 6270000
+[size] 1920 1016
+[pos] -1 -1
+*-22.000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] top.
+[treeopen] top.demapping.
+[sst_width] 233
+[signals_width] 102
+[sst_expanded] 1
+[sst_vpaned_height] 288
+@24
+#{top.demapping.x_i[15:0]} top.demapping.x_i[15] top.demapping.x_i[14] top.demapping.x_i[13] top.demapping.x_i[12] top.demapping.x_i[11] top.demapping.x_i[10] top.demapping.x_i[9] top.demapping.x_i[8] top.demapping.x_i[7] top.demapping.x_i[6] top.demapping.x_i[5] top.demapping.x_i[4] top.demapping.x_i[3] top.demapping.x_i[2] top.demapping.x_i[1] top.demapping.x_i[0]
+@c00024
+#{top.demapping.y_i[15:0]} top.demapping.y_i[15] top.demapping.y_i[14] top.demapping.y_i[13] top.demapping.y_i[12] top.demapping.y_i[11] top.demapping.y_i[10] top.demapping.y_i[9] top.demapping.y_i[8] top.demapping.y_i[7] top.demapping.y_i[6] top.demapping.y_i[5] top.demapping.y_i[4] top.demapping.y_i[3] top.demapping.y_i[2] top.demapping.y_i[1] top.demapping.y_i[0]
+@28
+top.demapping.y_i[15]
+top.demapping.y_i[14]
+top.demapping.y_i[13]
+top.demapping.y_i[12]
+top.demapping.y_i[11]
+top.demapping.y_i[10]
+top.demapping.y_i[9]
+top.demapping.y_i[8]
+top.demapping.y_i[7]
+top.demapping.y_i[6]
+top.demapping.y_i[5]
+top.demapping.y_i[4]
+top.demapping.y_i[3]
+top.demapping.y_i[2]
+top.demapping.y_i[1]
+top.demapping.y_i[0]
+@1401204
+-group_end
+@22
+#{top.demapping.z_o[15:0]} top.demapping.z_o[15] top.demapping.z_o[14] top.demapping.z_o[13] top.demapping.z_o[12] top.demapping.z_o[11] top.demapping.z_o[10] top.demapping.z_o[9] top.demapping.z_o[8] top.demapping.z_o[7] top.demapping.z_o[6] top.demapping.z_o[5] top.demapping.z_o[4] top.demapping.z_o[3] top.demapping.z_o[2] top.demapping.z_o[1] top.demapping.z_o[0]
+@28
+top.demapping.comp_cordic.dv_o
+@29
+#{top.demapping.data[3:0]} top.demapping.data[3] top.demapping.data[2] top.demapping.data[1] top.demapping.data[0]
+@420
+top.demapping.zz_o
+[pattern_trace] 1
+[pattern_trace] 0
