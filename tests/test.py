@@ -21,9 +21,9 @@ def test_cordic(dut):
     for i in range(16):
         dut.en_i <= 1
         dut.data <= i
-        yield Timer(1, units='ns')
+        yield Timer(12, units='ns')
         dut.en_i <= 0
-        yield Timer(13, units='ns')
+        yield Timer(1, units='ns')
 
     yield RisingEdge(dut.clk)
     for _ in range(10):

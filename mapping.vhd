@@ -10,10 +10,10 @@ port (
 	clk:  in std_logic;
 	rst:  in std_logic;
 	en_i: in std_logic;
-	dv_o: out std_logic;
+	dv_o: out std_logic := '0';
 	data: in std_logic_vector(3 downto 0);		
-	x_o  : out std_logic_vector(N-1 downto 0);
-    y_o  : out std_logic_vector(N-1 downto 0)
+	x_o  : out std_logic_vector(N-1 downto 0) := (others => '0');
+    y_o  : out std_logic_vector(N-1 downto 0) := (others => '0')
 );
 end mapping;
 
@@ -23,9 +23,9 @@ begin
 	cordic: process(clk, data, en_i) is
 	begin
 		if rising_edge(clk) then
-			-- if (en_i = '1') then
+			if (en_i = '1') then
 			dv_o <= '1';
-			case data is
+ 			case data is
       			when "0000" =>
 					x_o <= std_logic_vector(to_signed(16384, N));
 					y_o <= std_logic_vector(to_signed(0, N));		
@@ -78,9 +78,11 @@ begin
 					x_o <= std_logic_vector(to_signed(16384, N));
 					y_o <= std_logic_vector(to_signed(0, N));
 			end case;
-			-- else
-			-- 	dv_o <= '0';
-			-- end if;
+			else
+				x_o <= std_logic_vector(to_signed(0, N));
+				y_o <= std_logic_vector(to_signed(0, N));
+				dv_o <= '0';
+			end if;
 		end if;
 	end process;
 	
