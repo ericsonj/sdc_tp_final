@@ -1,13 +1,16 @@
 v 4
-file / "/home/ericson/Dropbox/MAESTRIA/MSE/bim3/SDC/sdc_tp_final/mapping.vhd" "e58cadd53725cf8193697dc356c7dfe9c15457bc" "20190822223806.621":
-  entity mapping at 1( 0) + 0 on 109;
-  architecture mapping_arc of mapping at 20( 409) + 0 on 110;
-file / "/home/ericson/Dropbox/MAESTRIA/MSE/bim3/SDC/sdc_tp_final/demapping.vhd" "636d95206916c936605d0091f8c1818e1d1db4fc" "20190821232131.316":
-  entity demapping at 1( 0) + 0 on 47;
-  architecture demapping_arc of demapping at 20( 373) + 0 on 48;
-file / "/home/ericson/Dropbox/MAESTRIA/MSE/bim3/SDC/sdc_tp_final/cordic.vhd" "250f15f01d586fd040d9f16a558e0971cf051f70" "20190821232131.317":
-  entity cordic at 1( 0) + 0 on 49;
-  architecture structural of cordic at 24( 625) + 0 on 50;
-file / "/home/ericson/Dropbox/MAESTRIA/MSE/bim3/SDC/sdc_tp_final/cordic_core.vhd" "0e75f716a2be55505bb22b12a34e2f5840c91515" "20190821232131.320":
-  entity cordic_core at 1( 0) + 0 on 51;
-  architecture rtl of cordic_core at 34( 797) + 0 on 52;
+file / "/home/ericson/Dropbox/MAESTRIA/MSE/bim3/SDC/sdc_tp_final/mapping.vhd" "ce8c70df30a8511de42cb6431e6e43a0919b7bee" "20190822233613.221":
+  entity mapping at 1( 0) + 0 on 283;
+  architecture mapping_arc of mapping at 20( 409) + 0 on 284;
+file / "/home/ericson/Dropbox/MAESTRIA/MSE/bim3/SDC/sdc_tp_final/demapping.vhd" "636d95206916c936605d0091f8c1818e1d1db4fc" "20190822233613.222":
+  entity demapping at 1( 0) + 0 on 285;
+  architecture demapping_arc of demapping at 20( 373) + 0 on 286;
+file / "/home/ericson/Dropbox/MAESTRIA/MSE/bim3/SDC/sdc_tp_final/cordic.vhd" "250f15f01d586fd040d9f16a558e0971cf051f70" "20190822233613.223":
+  entity cordic at 1( 0) + 0 on 287;
+  architecture structural of cordic at 24( 625) + 0 on 288;
+file / "/home/ericson/Dropbox/MAESTRIA/MSE/bim3/SDC/sdc_tp_final/cordic_core.vhd" "0e75f716a2be55505bb22b12a34e2f5840c91515" "20190822233613.225":
+  entity cordic_core at 1( 0) + 0 on 289;
+  architecture rtl of cordic_core at 34( 797) + 0 on 290;
+file / "/home/ericson/Dropbox/MAESTRIA/MSE/bim3/SDC/sdc_tp_final/maploop.vhd" "ce430d5414366930c5235614da0caed71d26064f" "20190822233613.219":
+  entity maploop at 1( 0) + 0 on 281;
+  architecture maploop_arc of maploop at 19( 328) + 0 on 282;

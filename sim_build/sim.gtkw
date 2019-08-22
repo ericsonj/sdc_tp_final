@@ -1,31 +1,33 @@
 [*]
 [*] GTKWave Analyzer v3.3.86 (w)1999-2017 BSI
-[*] Thu Aug 22 01:20:03 2019
+[*] Thu Aug 22 23:15:24 2019
 [*]
 [dumpfile] "/home/ericson/Dropbox/MAESTRIA/MSE/bim3/SDC/sdc_tp_final/sim_build/fsm_cmd.ghw"
-[dumpfile_mtime] "Thu Aug 22 01:19:46 2019"
-[dumpfile_size] 4019
+[dumpfile_mtime] "Thu Aug 22 23:12:59 2019"
+[dumpfile_size] 6440
 [savefile] "/home/ericson/Dropbox/MAESTRIA/MSE/bim3/SDC/sdc_tp_final/sim_build/sim.gtkw"
 [timestart] 0
 [size] 1920 1016
 [pos] -1 -1
-*-21.000000 490000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+*-23.000000 490000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
 [treeopen] top.
-[treeopen] top.mapping.
+[treeopen] top.maploop.
 [sst_width] 233
 [signals_width] 195
 [sst_expanded] 1
 [sst_vpaned_height] 288
 @28
-top.mapping.clk
-top.mapping.rst
-top.mapping.en_i
-@24
-top.mapping.dv_o
-@29
-#{top.mapping.data[3:0]} top.mapping.data[3] top.mapping.data[2] top.mapping.data[1] top.mapping.data[0]
+top.maploop.clk
+top.maploop.rst
+top.maploop.en_i
+@22
+#{top.maploop.data_i[3:0]} top.maploop.data_i[3] top.maploop.data_i[2] top.maploop.data_i[1] top.maploop.data_i[0]
 @420
-#{top.mapping.x_o[15:0]} top.mapping.x_o[15] top.mapping.x_o[14] top.mapping.x_o[13] top.mapping.x_o[12] top.mapping.x_o[11] top.mapping.x_o[10] top.mapping.x_o[9] top.mapping.x_o[8] top.mapping.x_o[7] top.mapping.x_o[6] top.mapping.x_o[5] top.mapping.x_o[4] top.mapping.x_o[3] top.mapping.x_o[2] top.mapping.x_o[1] top.mapping.x_o[0]
-#{top.mapping.y_o[15:0]} top.mapping.y_o[15] top.mapping.y_o[14] top.mapping.y_o[13] top.mapping.y_o[12] top.mapping.y_o[11] top.mapping.y_o[10] top.mapping.y_o[9] top.mapping.y_o[8] top.mapping.y_o[7] top.mapping.y_o[6] top.mapping.y_o[5] top.mapping.y_o[4] top.mapping.y_o[3] top.mapping.y_o[2] top.mapping.y_o[1] top.mapping.y_o[0]
+#{top.maploop.x_l[15:0]} top.maploop.x_l[15] top.maploop.x_l[14] top.maploop.x_l[13] top.maploop.x_l[12] top.maploop.x_l[11] top.maploop.x_l[10] top.maploop.x_l[9] top.maploop.x_l[8] top.maploop.x_l[7] top.maploop.x_l[6] top.maploop.x_l[5] top.maploop.x_l[4] top.maploop.x_l[3] top.maploop.x_l[2] top.maploop.x_l[1] top.maploop.x_l[0]
+#{top.maploop.y_l[15:0]} top.maploop.y_l[15] top.maploop.y_l[14] top.maploop.y_l[13] top.maploop.y_l[12] top.maploop.y_l[11] top.maploop.y_l[10] top.maploop.y_l[9] top.maploop.y_l[8] top.maploop.y_l[7] top.maploop.y_l[6] top.maploop.y_l[5] top.maploop.y_l[4] top.maploop.y_l[3] top.maploop.y_l[2] top.maploop.y_l[1] top.maploop.y_l[0]
+@22
+#{top.maploop.data_o[3:0]} top.maploop.data_o[3] top.maploop.data_o[2] top.maploop.data_o[1] top.maploop.data_o[0]
+@29
+top.maploop.dv_o
 [pattern_trace] 1
 [pattern_trace] 0

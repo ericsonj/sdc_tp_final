@@ -87,5 +87,3 @@ begin
 	end process;
 	
 end mapping_arc;
-
-
