@@ -4,9 +4,9 @@ export PYTHONPATH:=$(realpath tests):$(PYTHONPATH)
 LANG=vhdl
 SIM=ghdl
 
-VHDL_SOURCES= $(PWD)/mapping.vhd
+VHDL_SOURCES= $(PWD)/demapping.vhd $(PWD)/cordic.vhd $(PWD)/cordic_core.vhd 
 
-TOPLEVEL=mapping
+TOPLEVEL=demapping
 
 SIM_ARGS= --wave=fsm_cmd.ghw
 MODULE ?= test

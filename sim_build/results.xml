@@ -1,6 +1,6 @@
 <testsuites name="results">
   <testsuite name="all" package="all" tests="0">
-    <property name="random_seed" value="1566347155" />
-    <testcase classname="test" name="test_cordic" ratio_time="4853.800280031621" sim_time_ns="219.000001" time="0.045119285583496094" />
+    <property name="random_seed" value="1566437270" />
+    <testcase classname="test" name="test_cordic" ratio_time="6656.411489929591" sim_time_ns="235.000001" time="0.03530430793762207" />
   </testsuite>
 </testsuites>

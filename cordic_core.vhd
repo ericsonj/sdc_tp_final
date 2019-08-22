@@ -17,6 +17,8 @@ entity cordic_core is
         Busy         : out std_ulogic; --# Generating new result
         Result_valid : out std_ulogic; --# Flag when result is valid
 
+        Xneg : out std_ulogic;
+
         X : in signed(SIZE-1 downto 0);
         Y : in signed(SIZE-1 downto 0);
         Z : in signed(SIZE-1 downto 0);
@@ -54,9 +56,12 @@ architecture rtl of cordic_core is
     subtype iter_count is integer range 0 to ITERATIONS;
   
     signal cur_iter : iter_count;
+
+    signal x_isn : std_ulogic := '0';
+
   begin
   
-    cordic: process(Clock, Reset) is
+    cordic: process(Clock, Reset, x_isn) is
       variable negative : boolean;
     begin
       if Reset = '1' then
@@ -68,18 +73,19 @@ architecture rtl of cordic_core is
         Busy <= '0';
       elsif rising_edge(Clock) then
         if Data_valid = '1' then
-          xr <= X;
+          -- xr <= X;
           yr <= Y;
           zr <= Z;
           cur_iter <= 0;
           Result_valid <= '0';
           Busy <= '1';
+          x_isn <= X(SIZE-1);
+          xr <= abs(X);
         else
           if cur_iter /= ITERATIONS then
-
             --if cur_iter(ITERATIONS) /= '1' then
             negative := yr(y'high) = '0';
-            
+
             --if zr(z'high) = '1' then -- z or y is negative
             if negative then
               xr <= xr + y_shift; --(yr / 2**(cur_iter));
@@ -107,7 +113,7 @@ architecture rtl of cordic_core is
     x_shift <= shift_right(xr, cur_iter);
     y_shift <= shift_right(yr, cur_iter);
   
-  
+    Xneg <= x_isn;       
     X_result <= xr;
     Y_result <= yr;
     Z_result <= zr;

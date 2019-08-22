@@ -14,6 +14,7 @@ entity cordic is
     y_i  : in std_logic_vector(N-1 downto 0);
     z_i  : in std_logic_vector(N-1 downto 0);
     dv_o : out std_logic;
+    Xneg : out std_ulogic;
     x_o  : out std_logic_vector(N-1 downto 0);
     y_o  : out std_logic_vector(N-1 downto 0);
     z_o  : out std_logic_vector(N-1 downto 0)
@@ -35,6 +36,7 @@ architecture structural of cordic is
     Data_valid   : in std_ulogic;  --# Load new input data
     Busy         : out std_ulogic; --# Generating new result
     Result_valid : out std_ulogic; --# Flag when result is valid
+    Xneg         : out std_ulogic;
 
     X : in signed(SIZE-1 downto 0);
     Y : in signed(SIZE-1 downto 0);
@@ -77,6 +79,7 @@ architecture structural of cordic is
       Data_valid      => en_ii,
       Busy            => is_busy,
       Result_valid    => dv_o,
+      Xneg            => Xneg,
 
       X               => signed(x_i),
       Y               => signed(y_i),
