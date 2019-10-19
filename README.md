@@ -1,4 +1,4 @@
-#Maestria Sistemas Embebidos UBA
+# Maestria Sistemas Embebidos UBA
 
 ## Sistemas Digitales para las Comunicaciones  
 
@@ -7,6 +7,4 @@
 ### Grupo:  
  
 * Ericson Estupiñan  
-* Roberto Compañy 
-* 
-
+* Roberto Compañy
